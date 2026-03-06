@@ -12,3 +12,6 @@ EXPOSE 1880
  
 # Start Node-RED
 CMD ["npm", "start", "--", "--userDir", "/data"]
+
+# Copy custom settings
+COPY settings.js /data/settings.js
